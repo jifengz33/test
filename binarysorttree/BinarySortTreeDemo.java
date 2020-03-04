@@ -6,6 +6,7 @@ package com.binarysorttree;
  * @date 2020-01-05 15:17
  */
 public class BinarySortTreeDemo {
+    //test
     public static void main(String[] args) {
         int[] arr = {2, 7, 3, 3, 10, 12, 5, 1, 9};
         BinarySortTree binarySortTree = new BinarySortTree();
