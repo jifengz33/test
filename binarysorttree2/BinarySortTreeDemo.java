@@ -9,7 +9,7 @@ import javax.lang.model.element.VariableElement;
  * @date 2020-01-06 13:04
  */
 public class BinarySortTreeDemo {
-
+    //hello
     public static void main(String[] args) {
         int[] arr = {2, 7, 3, 10, 12, 5, 1, 9};
         BinarySortTree binarySortTree = new BinarySortTree();
