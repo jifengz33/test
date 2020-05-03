@@ -22,7 +22,7 @@ public class HeapSort {
 //		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //		String date1Str = simpleDateFormat.format(data1);
 //		System.out.println("排序前的时间是=" + date1Str);
-        int arr[] = {20, 30, 90, 40, 70, 110, 60, 10, 100, 50, 80};
+        int arr[] = {20, 30, 90, 40, 70, 110, 60,1, 10, 100, 50, 80};
         heapSort(arr);
 
 //		Date data2 = new Date();

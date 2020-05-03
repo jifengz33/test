@@ -14,26 +14,27 @@ public class BinarySearch {
 
 
         //
-//        int resIndex = binarySearch(arr, 0, arr.length - 1, 12345);
-//        System.out.println("resIndex=" + resIndex);
+        int resIndex = binarySearch(arr, 0, arr.length - 1, 12345);
+        System.out.println("resIndex=" + resIndex);
 
-		List<Integer> resIndexList = binarySearch2(arr, 0, arr.length - 1, 1000);
-		System.out.println("resIndexList=" + resIndexList);
+		//List<Integer> resIndexList = binarySearch2(arr, 0, arr.length - 1, 1000);
+		//System.out.println("resIndexList=" + resIndexList);
     }
 
-    public static int binarySearch(int[] arr, int left, int right, int findVal) {
-        if (left > right) {
-            return -1;
-        }
-        int mid = (left + right) / 2;
-        if (findVal > arr[mid]) {
-            return binarySearch(arr, mid + 1, right, findVal);
-        } else if (findVal < arr[mid]) {
-            return binarySearch(arr, left, mid - 1, findVal);
-        } else {
-            return mid;
-        }
-    }
+//    public static int binarySearch(int[] arr, int left, int right, int findVal) {
+//        if(left > right){
+//            return -1;
+//        }
+//        int mid = (right - left)/2 + left;
+//        int midValue = arr[mid];
+//        if(findVal < midValue){
+//            return binarySearch(arr,left,mid-1,findVal);
+//        } else if(findVal > midValue){
+//            return binarySearch(arr,mid+1,right,findVal);
+//        } else {
+//            return mid;
+//        }
+//    }
 
     // 二分查找算法
 
@@ -44,26 +45,26 @@ public class BinarySearch {
      * @param findVal 要查找的值
      * @return 如果找到就返回下标，如果没有找到，就返回 -1
      */
-//	public static int binarySearch(int[] arr, int left, int right, int findVal) {
-//
-//
-//		// 当 left > right 时，说明递归整个数组，但是没有找到
-//		if (left > right) {
-//			return -1;
-//		}
-//		int mid = (left + right) / 2;
-//		int midVal = arr[mid];
-//
-//		if (findVal > midVal) { // 向 右递归
-//			return binarySearch(arr, mid + 1, right, findVal);
-//		} else if (findVal < midVal) { // 向左递归
-//			return binarySearch(arr, left, mid - 1, findVal);
-//		} else {
-//
-//			return mid;
-//		}
-//
-//	}
+	public static int binarySearch(int[] arr, int left, int right, int findVal) {
+
+
+		// 当 left > right 时，说明递归整个数组，但是没有找到
+		if (left > right) {
+			return -1;
+		}
+		int mid = (left + right) / 2;
+		int midVal = arr[mid];
+
+		if (findVal > midVal) { // 向 右递归
+			return binarySearch(arr, mid + 1, right, findVal);
+		} else if (findVal < midVal) { // 向左递归
+			return binarySearch(arr, left, mid - 1, findVal);
+		} else {
+
+			return mid;
+		}
+
+	}
 
     //完成一个课后思考题:
     /*
